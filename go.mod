@@ -1,0 +1,3 @@
+module github.com/abdellaouiamir/http_server
+
+go 1.25.5
