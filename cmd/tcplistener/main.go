@@ -6,7 +6,6 @@ import (
 	"io"
 	"log"
 	"net"
-	"os"
 )
 
 func getLinesChannel(f io.ReadCloser) <-chan string {
