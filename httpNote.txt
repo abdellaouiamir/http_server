@@ -1,0 +1,11 @@
+POST /coffee HTTP/1.1             # start-line CRLF
+HOST: localhost:5555              # *(field-line CRLF)
+User-Agent: curl/8.6.0            # *(field-line CRLF)
+Accept: */*                       # *(field-line CRLF)
+Content-Type: application/json    # *(field-line CRLF) 
+Content-Length: 22                # *(field-line CRLF)
+                                  # CRLF
+{"flavor":"dark mode"}            # [ message-body ]
+
+
+curl -X POST -H "Content-Type: application/json" -d '{"flavor":"dark mode"}' http://localhost:5555
